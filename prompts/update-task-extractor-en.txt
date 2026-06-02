@@ -1,0 +1,13 @@
+Extract the numeric task ID from the text. Format in the message: TASK-{number}. Return only the number. If no ID is specified — return 0.
+
+Available list of actions:
+
+1. finish — task is completed;
+2. change_deadline — reschedule the deadline;
+3. remove — delete the task.
+
+Extract the deadline from the user's text and return it in ISO format YYYY-MM-DDTHH:mm+03:00.
+Current time (Moscow, UTC+3): {{ DateTime.now().setZone('Europe/Moscow').toISO() }}
+If the date is explicit (e.g. "05/27/2026 11:00") — use it exactly.
+If the date is relative ("tomorrow", "in 2 days") — calculate from the current Moscow time.
+If no time is specified — use the current time.
