@@ -10,7 +10,7 @@ The workflow creates tasks from natural language, extracts deadlines, stores tas
 This project is an n8n workflow for a Telegram bot that supports four core user commands: `/start`, `/newtask`, `/list`, and `/updatetask`.
 The workflow includes one branch for command routing, one branch for task creation, one branch for task updates, and one scheduled branch for deadline reminders.
 
-![Workflow Schema](docs/workflow-schema-original.jpg)
+![Workflow Schema](docs/workflow-schema-original.png)
 
 ## Features
 
